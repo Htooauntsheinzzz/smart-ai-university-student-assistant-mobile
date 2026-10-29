@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter · simulator or emulator (localhost backend)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define-from-file=.env"
+      ]
+    },
+    {
+      "name": "Flutter · physical device (backend on Mac LAN)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define-from-file=.env",
+        "--dart-define=API_BASE_URL=${input:apiBaseUrl}"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "apiBaseUrl",
+      "type": "promptString",
+      "description": "API base URL used by the mobile app. For a physical phone on the same Wi-Fi, use http://<this Mac's LAN IP>:8080 (run `scripts/run_physical.sh` to print the current IP).",
+      "default": "http://10.5.5.188:8080"
+    }
+  ]
+}

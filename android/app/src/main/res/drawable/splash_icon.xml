@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon for the Android 12+ system splash screen (windowSplashScreenAnimatedIcon).
+     The system draws this like an adaptive-icon foreground layer: the layer is
+     1.5x the visible area and everything outside the central circle (two
+     thirds of the layer) is masked off. Insets are fractions of the layer so
+     the logo stays inside that circle at any size: 47% of the layer height,
+     with the width inset matching the logo's 1480:1660 aspect ratio so the
+     bitmap scales uniformly. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/splash_logo"
+    android:insetLeft="29.05%"
+    android:insetRight="29.05%"
+    android:insetTop="26.5%"
+    android:insetBottom="26.5%" />

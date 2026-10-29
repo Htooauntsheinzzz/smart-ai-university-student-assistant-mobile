@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug-only network security config. Permits plain HTTP for every
+     host so the Flutter app can reach the Spring Boot backend running
+     on the developer's Mac, whether that Mac is reached through the
+     loopback address (iOS Simulator / macOS), through the Android
+     emulator's host loopback alias (`10.0.2.2`), through the Mac's
+     LAN IP (physical device on the same Wi-Fi network) or through an
+     ngrok / staging tunnel. Release builds use the main manifest,
+     which keeps the default HTTPS-only policy. -->
+<network-security-config>
+  <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background of the native launch screen. Keep in sync with
+         AppColors.background in lib/app/theme/app_theme.dart so the hand-off
+         to the Flutter splash screen is seamless. -->
+    <color name="splash_background">#273238</color>
+</resources>
